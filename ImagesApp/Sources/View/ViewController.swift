@@ -13,6 +13,16 @@ class ViewController: UIViewController {
 
     private lazy var viewModel: ViewModelProtocol = ViewModel()
 
+    private lazy var reloadButton: UIBarButtonItem = {
+        let reloadButton = UIBarButtonItem(
+            title: "Reload",
+            style: .plain,
+            target: self,
+            action: #selector(self.reloadAllImages)
+        )
+        return reloadButton
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "images"
@@ -40,21 +50,19 @@ class ViewController: UIViewController {
             target: self,
             action: #selector(addNewImages)
         )
-        let reloadButton = UIBarButtonItem(
-            title: "Reload",
-            style: .plain,
-            target: self,
-            action: #selector(reloadAllImages)
-        )
         navigationItem.rightBarButtonItems = [addButton, reloadButton]
     }
 
     @objc func addNewImages() {
         viewModel.addImage()
-        collectionView.reloadData()
+        collectionView.performBatchUpdates({
+            let indexPath = IndexPath(item: viewModel.imageCount - 1, section: 0)
+            collectionView.insertItems(at: [indexPath])
+        }, completion: nil)
     }
 
     @objc func reloadAllImages() {
+        reloadButton.debounce()
         viewModel.reloadImages()
         collectionView.reloadData()
     }
