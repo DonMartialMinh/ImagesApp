@@ -22,6 +22,7 @@
 		341CA61D2C81B2D1007E8BC6 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341CA61C2C81B2D1007E8BC6 /* TypeAlias.swift */; };
 		341CA61F2C81C041007E8BC6 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341CA61E2C81C041007E8BC6 /* ImageCacher.swift */; };
 		341CA6212C81C197007E8BC6 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341CA6202C81C197007E8BC6 /* ImageService.swift */; };
+		34E62CDF2C897C8200C0BEF8 /* UIBarButtonItem+Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E62CDE2C897C8200C0BEF8 /* UIBarButtonItem+Debounce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		341CA61C2C81B2D1007E8BC6 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		341CA61E2C81C041007E8BC6 /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
 		341CA6202C81C197007E8BC6 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		34E62CDE2C897C8200C0BEF8 /* UIBarButtonItem+Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Debounce.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				341CA6182C81B193007E8BC6 /* CacheHelper.swift */,
 				341CA61A2C81B1A9007E8BC6 /* CacheProperties.swift */,
 				341CA61C2C81B2D1007E8BC6 /* TypeAlias.swift */,
+				34E62CDE2C897C8200C0BEF8 /* UIBarButtonItem+Debounce.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				341CA60D2C81ADD6007E8BC6 /* ViewModel.swift in Sources */,
 				341CA5F92C81A7A1007E8BC6 /* ViewController.swift in Sources */,
 				341CA60B2C81AB11007E8BC6 /* ImageCell.swift in Sources */,
+				34E62CDF2C897C8200C0BEF8 /* UIBarButtonItem+Debounce.swift in Sources */,
 				341CA5F52C81A7A1007E8BC6 /* AppDelegate.swift in Sources */,
 				341CA6192C81B193007E8BC6 /* CacheHelper.swift in Sources */,
 				341CA61F2C81C041007E8BC6 /* ImageCacher.swift in Sources */,
